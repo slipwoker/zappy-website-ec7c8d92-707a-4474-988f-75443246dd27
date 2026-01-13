@@ -1,0 +1,526 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מערכת ניהול לכידות חתולים חכמה ומתקדמת — SKY מערכת ניהול לכידות</title>
+  <meta name="description" content="גלו את מערכת ניהול לכידות חתולים המתקדמת ביותר לתיעוד וחיפוש. פתרון דיגיטלי חכם ללוכדות עצמאיות. התחילו עכשיו!">
+  <meta name="keywords" content="מערכת ניהול לכידות חתולים, תוכנה לתיעוד לכידות חתולים רחוב, לוכדת חתולים מערכת דיגיטלית, SKY ניהול לכידות">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>
+/* Zappy Attribution Header Styles */
+.zappy-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 4px 19px 0px rgba(0,0,0,0.04);
+  padding: 16px 10px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  line-height: 21px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 21px;
+  direction: ltr !important;
+  unicode-bidi: isolate;
+}
+
+    .zappy-header p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      white-space: nowrap;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0 !important;
+      direction: ltr !important;
+    }
+
+.zappy-header .zappy-link {
+  font-weight: 700;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.zappy-header .zappy-link:hover {
+  opacity: 0.7;
+}</style>
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
+    <!-- Mickidum Accessibility Toolbar -->
+    <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
+
+    <style id="zappy-dropdown-submenu-styles">
+      /* ========== DESKTOP DROPDOWN SUBMENU STYLES ========== */
+      /* Base styles for dropdown submenus - parent must be positioned */
+      .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { position: relative; }
+      /* Submenu base - hidden by default */
+      .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { display: block !important; position: absolute !important; top: 100%; left: 0; min-width: 220px; background: white; border-radius: 8px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); padding: 8px 0; opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s ease; z-index: 1000; list-style: none; pointer-events: none; }
+      /* CRITICAL: Desktop hover styles to show dropdown */
+      .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Submenu item styling */
+      .sub-menu li { list-style: none; margin: 0; padding: 0; }
+      .sub-menu a { display: block !important; padding: 10px 16px !important; color: #333 !important; font-weight: 500; text-decoration: none; white-space: nowrap; transition: background-color 0.2s; }
+      .sub-menu a:hover { background-color: #f5f5f5; }
+      /* RTL (Hebrew/Arabic) dropdown positioning */
+      [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
+      /* Hide empty dropdown menus */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Desktop: show submenu on Menu Group hover */
+      li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
+      /* Menu Group title styling */
+      .nav-menu > li > .menu-group-title, #navMenu > li > .menu-group-title { display: inline-block; padding: 0.5rem 1rem; cursor: default; user-select: none; }
+      
+      /* ========== MOBILE SUBMENU STYLES ========== */
+      @media (max-width: 768px) {
+        .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
+        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
+        /* Disable hover behavior on mobile */
+        .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
+        .nav-menu li > .sub-menu.mobile-expanded, nav li > .sub-menu.mobile-expanded, .navbar li > .sub-menu.mobile-expanded, #navMenu li > .sub-menu.mobile-expanded { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+        .nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu) { display: flex !important; flex-wrap: wrap !important; align-items: center !important; }
+        .nav-menu li:has(.sub-menu) > a, nav li:has(.sub-menu) > a, .navbar li:has(.sub-menu) > a, #navMenu li:has(.sub-menu) > a { flex: 1 !important; }
+        .mobile-submenu-toggle { display: flex !important; align-items: center !important; justify-content: center !important; width: 44px !important; height: 44px !important; background: transparent !important; border: none !important; cursor: pointer !important; }
+        .mobile-submenu-toggle::after { content: '' !important; width: 0 !important; height: 0 !important; border-left: 6px solid transparent !important; border-right: 6px solid transparent !important; border-top: 7px solid currentColor !important; transition: transform 0.3s ease !important; }
+        .mobile-submenu-toggle.expanded::after { transform: rotate(180deg) !important; }
+        .nav-menu li:has(.sub-menu) > .sub-menu, nav li:has(.sub-menu) > .sub-menu { flex-basis: 100% !important; width: 100% !important; }
+        .sub-menu a { padding: 10px 0 !important; display: block !important; }
+        .nav-menu li:has(.sub-menu) > .menu-group-title, nav li:has(.sub-menu) > .menu-group-title, .navbar li:has(.sub-menu) > .menu-group-title, #navMenu li:has(.sub-menu) > .menu-group-title { flex: 1 !important; }
+      }
+      @media (min-width: 769px) { .mobile-submenu-toggle { display: none !important; } }
+    </style>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Zappy Attribution Header -->
+<div id="zappy-attribution-header" class="zappy-header" style="display: none;">
+  <p>Happily created by&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" class="zappy-link">Zappy</a></p>
+</div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="nav-brand">
+        <a href="/" class="logo-link">
+          <img src="/assets/business-logo.webp" alt="SKY מערכת ניהול לכידות" class="logo" />
+        </a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobileToggle" aria-label="תפריט">
+        <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      
+      <button class="phone-header-btn" aria-label="התקשרו אלינו">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/services">שירותים</a></li>
+        <li><a href="/about">אודות</a></li>
+      </ul>
+      
+      <div class="nav-cta-container">
+        <li class="nav-cta-item">
+          <a href="/contact" class="nav-cta-btn">צור קשר</a>
+        </li>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <img data-placeholder="hero-1" data-context="Wide panoramic shot of professional cat trapper working with digital tablet system in urban street environment, documenting rescued street cats with modern technology" src="/assets/sky-hero-hero-1.webp" alt="מערכת ניהול לכידות חתולים דיגיטלית מתקדמת" class="hero-img">
+    <div class="container hero-content">
+      <h1>מערכת ניהול לכידות חתולים חכמה ומתקדמת</h1>
+      <h3>פתרון דיגיטלי מקצועי לתיעוד, חיפוש וניהול לכידות חתולי רחוב בצורה יעילה ומסודרת</h3>
+      <div class="hero-cta">
+        <a href="/contact" class="btn-primary">התחילו עכשיו</a>
+        <a href="/services" class="btn-secondary">גלו עוד</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="container">
+      <h2>למה לבחור במערכת SKY ניהול לכידות?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>תיעוד חזותי מלא</h3>
+          <p>העלו תמונות של כל לכידה, צפו בגלריה מסודרת ומצאו חתולים במהירות לפי מאפיינים חזותיים. המערכת שומרת היסטוריה מלאה עם תמונות איכותיות.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>חיפוש מתקדם</h3>
+          <p>מנוע חיפוש חכם המאפשר איתור מהיר של לכידות לפי תאריך, מיקום, צבע, גודל ומאפיינים נוספים. מצאו כל חתול תוך שניות.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3>דוחות מקצועיים</h3>
+          <p>הפיקו דוחות מפורטים על פעילות הלכידה, סטטיסטיקות ונתונים חשובים. ייצוא לקבצים דיגיטליים לשיתוף עם רשויות ומתנדבים.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>נגישות מכל מקום</h3>
+          <p>עבדו מהטלפון, טאבלט או מחשב. המערכת מותאמת לכל מכשיר ומאפשרת תיעוד בזמן אמת ישירות מהשטח.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-preview">
+    <div class="container">
+      <h2>היכולות המתקדמות של תוכנה לתיעוד לכידות חתולים רחוב</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <img data-placeholder="service-1" data-context="Close-up of hands using smartphone to document rescued street cat with digital form and photo upload interface" src="/assets/sky-service-service-1.webp" alt="תיעוד דיגיטלי של לכידת חתול רחוב">
+          <div class="service-content">
+            <h3>תיעוד מהיר בשטח</h3>
+            <p>תעדו כל לכידה תוך שניות עם טופס חכם המותאם לעבודה בשטח. העלו תמונות, הוסיפו פרטים ושמרו הכל בענן בצורה מאובטחת.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img data-placeholder="service-2" data-context="Digital dashboard showing gallery of rescued cats with detailed information cards and search filters" src="/assets/sky-service-service-2.webp" alt="ממשק ניהול גלריית חתולים">
+          <div class="service-content">
+            <h3>גלריה מסודרת</h3>
+            <p>כל החתולים שלכם במקום אחד, עם תמונות ברורות ופרטים מלאים. סינון חכם לפי מאפיינים שונים למציאה מהירה.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <img data-placeholder="service-3" data-context="Professional analytics dashboard showing cat rescue statistics, charts and graphs on tablet screen" src="/assets/sky-service-service-3.webp" alt="דוחות וסטטיסטיקות לכידות">
+          <div class="service-content">
+            <h3>ניתוח נתונים</h3>
+            <p>קבלו תובנות על פעילות הלכידה שלכם עם גרפים וסטטיסטיקות מפורטות. עקבו אחר התקדמות ושפרו את היעילות.</p>
+          </div>
+        </div>
+      </div>
+      <div class="cta-center">
+        <a href="/services" class="btn-primary">גלו את כל השירותים</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits-section">
+    <div class="container">
+      <div class="benefits-content">
+        <h2>היתרונות של לוכדת חתולים מערכת דיגיטלית</h2>
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h3>חיסכון בזמן</h3>
+              <p>אין יותר צורך במחברות ידניות או קבצי אקסל מסורבלים. כל המידע במקום אחד, נגיש ומסודר.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h3>דיוק ומקצועיות</h3>
+              <p>תיעוד מדויק עם תמונות איכותיות ופרטים מלאים. הצגה מקצועית מול רשויות ומתנדבים.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h3>גיבוי אוטומטי</h3>
+              <p>כל המידע מגובה אוטומטית בענן. לעולם לא תאבדו מידע חשוב על לכידות.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h3>עדכונים שוטפים</h3>
+              <p>המערכת מתעדכנת באופן קבוע עם תכונות חדשות ושיפורים המותאמים לצרכי הלוכדות.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="benefits-image">
+        <img data-placeholder="service-4" data-context="Professional cat trapper using tablet in the field, surrounded by cat carriers, showing efficient digital documentation workflow" src="/assets/sky-service-service-4.webp" alt="עבודה יעילה עם מערכת דיגיטלית">
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <div class="container">
+      <h2>איך זה עובד?</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <img data-placeholder="service-5" data-context="Smartphone screen showing simple registration form for cat trapper account setup" src="/assets/sky-service-service-5.webp" alt="הרשמה למערכת">
+          <h3>הרשמה מהירה</h3>
+          <p>צרו חשבון תוך דקות והתחילו לעבוד. ממשק פשוט ואינטואיטיבי שלא דורש הדרכה מורכבת.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <img data-placeholder="service-6" data-context="Hands holding phone photographing rescued street cat in carrier with documentation interface overlay" src="/assets/sky-service-service-6.webp" alt="תיעוד לכידה">
+          <h3>תיעוד לכידות</h3>
+          <p>צלמו את החתול, הוסיפו פרטים חשובים כמו מיקום, תאריך, מאפיינים פיזיים ומצב בריאותי. הכל בטופס אחד.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <img data-placeholder="service-7" data-context="Digital interface showing organized cat database with search results and detailed cat profiles" src="/assets/sky-service-service-7.webp" alt="ניהול וחיפוש">
+          <h3>ניהול חכם</h3>
+          <p>חפשו, סננו וצפו בכל הלכידות שלכם. הפיקו דוחות, עקבו אחר סטטיסטיקות ושפרו את העבודה.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <div class="container">
+      <h2>מה אומרות לוכדות שמשתמשות במערכת</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"מערכת SKY שינתה לי את החיים! אני כבר לא צריכה לחפש במחברות או בתמונות בטלפון. הכל מסודר, נגיש ומקצועי. חוסכת לי שעות כל שבוע."</p>
+          <div class="testimonial-author">
+            <strong>רחל כהן</strong>
+            <span>לוכדת עצמאית, תל אביב</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"הדוחות המקצועיים עזרו לי להציג את העבודה שלי בצורה מרשימה מול העירייה. קיבלתי תקציב נוסף הודות לנתונים המדויקים שהמערכת מספקת."</p>
+          <div class="testimonial-author">
+            <strong>מיכל לוי</strong>
+            <span>לוכדת עצמאית, חיפה</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>"המערכת פשוטה להפליא. אפילו בשטח, עם חתול בכלוב, אני מצליחה לתעד הכל תוך שניות. ממליצה בחום לכל לוכדת!"</p>
+          <div class="testimonial-author">
+            <strong>שרה אברהם</strong>
+            <span>לוכדת עצמאית, ירושלים</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-preview">
+    <div class="container">
+      <h2>תמונות ממערכת ניהול לכידות חתולים שלנו</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img data-placeholder="service-8" data-context="Mobile app interface showing cat profile with detailed information, photos and medical records" src="/assets/sky-service-service-8.webp" alt="ממשק פרופיל חתול במערכת">
+        </div>
+        <div class="gallery-item">
+          <img data-placeholder="service-9" data-context="Tablet screen displaying map view with pins showing cat rescue locations and statistics" src="/assets/sky-service-service-9.webp" alt="תצוגת מפה עם מיקומי לכידות">
+        </div>
+        <div class="gallery-item">
+          <img data-placeholder="service-10" data-context="Desktop computer showing comprehensive rescue reports with charts, graphs and export options" src="/assets/sky-service-service-10.webp" alt="דוחות מקיפים ומקצועיים">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>מוכנות להתחיל לעבוד בצורה חכמה יותר?</h2>
+        <p>הצטרפו לעשרות לוכדות שכבר משתמשות במערכת SKY ניהול לכידות וחוסכות זמן יקר. התחילו עכשיו ותראו את ההבדל!</p>
+        <a href="/contact" class="btn-primary">צרו קשר עכשיו</a>
+      </div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/[whatsapp_handle]" target="_blank" class="whatsapp-float" aria-label="WhatsApp" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  
+    <!-- Legal Footer -->
+    <footer class="legal-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="all-rights-reserved">
+            <p>© 2026 SKY מערכת ניהול לכידות. כל הזכויות שמורות.</p>
+          </div>
+          <div class="footer-social"><a href="https://facebook.com/[facebook_handle]" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+<a href="https://instagram.com/[instagram_handle]" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://wa.me/[whatsapp_handle]" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+          <div class="footer-legal">
+            <a href="/privacy" aria-label="מדיניות פרטיות">
+              מדיניות פרטיות
+            </a>
+            <span class="separator">|</span>
+            <a href="/accessibility" aria-label="נגישות">
+              נגישות
+            </a>
+            <span class="separator">|</span>
+            <a href="/terms" aria-label="תנאי שימוש">
+              תנאי שימוש
+            </a>
+          </div>
+        </div>
+        <div class="zappy-attribution">
+          <p>נוצר באמצעות&nbsp;<a href="https://zappy5.com" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Zappy</a></p>
+        </div>
+      </div>
+    </footer>
+
+
+<!-- Zappy Attribution Header Script -->
+<script>
+(function() {
+  var websiteId = 'ec7c8d92-707a-4474-988f-75443246dd27';
+  
+  // Don't show header in preview mode
+  var currentUrl = window.location.href;
+  var isPreview = currentUrl.includes('/preview/') || 
+                  currentUrl.includes('/preview-fullscreen/') || 
+                  currentUrl.includes('localhost:5001') ||
+                  currentUrl.includes('localhost:3000');
+  
+  if (isPreview) {
+    return; // Exit early in preview mode
+  }
+  
+  fetch('https://api.zappy5.com/api/website/' + websiteId + '/tier')
+    .then(function(response) { return response.json(); })
+    .then(function(data) {
+      if (data.showAttribution) {
+        var header = document.getElementById('zappy-attribution-header');
+        if (header) {
+          // Use dynamic announcement content if available
+          if (data.announcement && data.announcement.html) {
+            header.innerHTML = data.announcement.html;
+          }
+          // Apply fixed positioning styles inline (works for existing sites too)
+          header.style.cssText = 'position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99999 !important; display: flex !important; justify-content: center !important; align-items: center !important; text-align: center !important; box-sizing: border-box !important;';
+          // Fix child elements that might have position: fixed from old CSS
+          var children = header.querySelectorAll('*');
+          for (var i = 0; i < children.length; i++) {
+            children[i].style.position = 'static';
+          }
+          // Get header height
+          var headerHeight = header.offsetHeight;
+          // Find and fix navbar to be fixed as well (prevents gap at top of page)
+          var navSelectors = ['nav', '.navbar', '.nav'];
+          var navbar = null;
+          for (var j = 0; j < navSelectors.length; j++) {
+            navbar = document.querySelector(navSelectors[j]);
+            if (navbar && navbar.id !== 'zappy-attribution-header') break;
+            navbar = null;
+          }
+          if (navbar) {
+            var navbarHeight = navbar.offsetHeight;
+            navbar.style.cssText += '; position: fixed !important; top: ' + headerHeight + 'px !important; left: 0 !important; right: 0 !important; width: 100% !important; z-index: 99998 !important;';
+            document.body.style.paddingTop = (headerHeight + navbarHeight) + 'px';
+          } else {
+            document.body.style.paddingTop = headerHeight + 'px';
+          }
+        }
+      }
+    })
+    .catch(function(error) {
+      console.error('Failed to check tier:', error);
+    });
+})();
+</script>
+    <div data-integration="accessibility:toolbar"></div>
+
+    <script id="zappy-mobile-submenu-script">
+    (function() {
+      function initMobileSubmenuToggles() {
+        if (window.innerWidth > 768) {
+          document.querySelectorAll('.mobile-submenu-toggle').forEach(function(btn) { btn.remove(); });
+          document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) { menu.classList.remove('mobile-expanded'); });
+          return;
+        }
+        var items = document.querySelectorAll('.nav-menu li:has(.sub-menu), nav li:has(.sub-menu), .navbar li:has(.sub-menu), #navMenu li:has(.sub-menu)');
+        items.forEach(function(li) {
+          if (li.querySelector('.mobile-submenu-toggle')) return;
+          var submenu = li.querySelector('.sub-menu');
+          var parentLink = li.querySelector(':scope > a');
+          if (!submenu || !parentLink) return;
+          var toggleBtn = document.createElement('button');
+          toggleBtn.className = 'mobile-submenu-toggle';
+          toggleBtn.setAttribute('aria-label', 'Toggle submenu');
+          toggleBtn.setAttribute('type', 'button');
+          parentLink.insertAdjacentElement('afterend', toggleBtn);
+          toggleBtn.addEventListener('click', function(e) {
+            e.preventDefault(); e.stopPropagation();
+            document.querySelectorAll('.sub-menu.mobile-expanded').forEach(function(menu) {
+              if (menu !== submenu) { menu.classList.remove('mobile-expanded'); var t = menu.parentElement.querySelector('.mobile-submenu-toggle'); if(t) t.classList.remove('expanded'); }
+            });
+            submenu.classList.toggle('mobile-expanded');
+            toggleBtn.classList.toggle('expanded');
+          });
+        });
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initMobileSubmenuToggles); }
+      else { initMobileSubmenuToggles(); }
+      var resizeTimer; window.addEventListener('resize', function() { clearTimeout(resizeTimer); resizeTimer = setTimeout(initMobileSubmenuToggles, 250); });
+      // Re-initialize when mobile menu becomes visible (MutationObserver)
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'attributes') {
+            var target = mutation.target;
+            if (target.classList && (target.classList.contains('active') || target.classList.contains('open'))) {
+              setTimeout(initMobileSubmenuToggles, 100);
+            }
+          }
+        });
+      });
+      setTimeout(function() {
+        document.querySelectorAll('.mobile-menu, .nav-menu, #navMenu, nav').forEach(function(menu) {
+          observer.observe(menu, { attributes: true, attributeFilter: ['class', 'style'] });
+        });
+      }, 500);
+    })();
+    </script>
+    <script src="/script.js"></script>
+</body></html>

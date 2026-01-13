@@ -1,0 +1,57 @@
+# SKY מערכת ניהול לכידות — Generative Engine Optimization Map
+
+> A רווחת בעלי חיים / הצלת חיות רחוב business.
+
+---
+
+## Pages
+
+### בית
+https://sky-ec7c8d92.zappy5.app
+גלו את מערכת ניהול לכידות חתולים המתקדמת ביותר לתיעוד וחיפוש. פתרון דיגיטלי חכם ללוכדות עצמאיות. התחילו עכשיו!
+
+### שירותים
+https://sky-ec7c8d92.zappy5.app/services
+גלו את מגוון השירותים שלנו: תיעוד דיגיטלי, חיפוש מתקדם, דוחות מקצועיים ועוד. תוכנה לתיעוד לכידות חתולים רחוב המתאימה לכל לוכדת.
+
+### אודות
+https://sky-ec7c8d92.zappy5.app/about
+למדו על הסיפור מאחורי מערכת ניהול לכידות חתולים המתקדמת ביותר. החזון שלנו: לעזור ללוכדות עצמאיות לעבוד בצורה יעילה ומקצועית יותר.
+
+### צור קשר
+https://sky-ec7c8d92.zappy5.app/contact
+יש לכם שאלות על מערכת ניהול לכידות חתולים שלנו? צרו קשר עכשיו ונשמח לעזור. מענה מהיר ושירות אישי ללוכדות חתולים.
+
+## Legal & Policy
+
+### Privacy Policy
+https://sky-ec7c8d92.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://sky-ec7c8d92.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://sky-ec7c8d92.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About SKY מערכת ניהול לכידות
+SKY מערכת ניהול לכידות is a business in the רווחת בעלי חיים / הצלת חיות רחוב industry.
+
+## Target Audience
+לוכדת חתולים עצמאית
+
+## Industry
+רווחת בעלי חיים / הצלת חיות רחוב
+
+---
+
+# Additional Resources
+
+- **Sitemap**: https://sky-ec7c8d92.zappy5.app/sitemap.xml
+- **Robots.txt**: https://sky-ec7c8d92.zappy5.app/robots.txt

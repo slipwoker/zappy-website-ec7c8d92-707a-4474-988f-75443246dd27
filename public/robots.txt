@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sky-ec7c8d92.zappy5.app/sitemap.xml
